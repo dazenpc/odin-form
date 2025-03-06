@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdopDog - Adopt a dog today!</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <div class="logo-and-image">
@@ -21,30 +21,45 @@
     </div>
     <div class="adopting-form">
         <div class="cta">
-            <p></p>
+            <p>This is not a real service. So, dont try to adopt a dog on this website. But try to adopt a dog from some other reputable places</p>
         </div>
         <div class="get-details">
             <form action="#" method="post">
                 <div class="user-name">
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="John">
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Doe">
+                    <div class="fname">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John">
+                    </div>
+                    <div class="lname">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe">
+                    </div>
                 </div>
                 <div class="contact-details">
-                    <label for="email-address">Email</label>
-                    <input type="email" id="email-address" name="email-address" required placeholder="johndoe1999@gmail.com">
-                    <label for="phone-number">Phone number</label>
-                    <input type="tel" name="tel" id="phone-number" required placeholder="9876543210">
+                    <div class="email-add">
+                        <label for="email-address">Email</label>
+                        <input type="email" id="email-address" name="email-address" required placeholder="johndoe1999@gmail.com">
+                    </div>
+                    <div class="phone-add">
+                        <label for="phone-number">Phone number</label>
+                        <input type="tel" name="tel" id="phone-number" required placeholder="9876543210" minlength=10>
+                    </div>
                 </div>
                 <div class="pass-word">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass">
-                    <label for="cpass">Confirm Password</label>
-                    <input type="password" name="confirm-pass" id="cpass">
+                    <div class="ini-pass">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" placeholder="EnterPassword(8 digit)" minlength=8>
+                    </div>
+                    <div class="confirm-pass">
+                        <label for="cpass">Confirm Password</label>
+                        <input type="password" name="confirm-pass" id="cpass" placeholder="EnterPasswordAgain" minlength=8>
+                    </div>
                 </div>
-                <div class="cta-button"><button type="submit">Create Account</button></div>
+                <div class="cta-button"><button type="submit">Adopt now!</button></div>
             </form>
+        </div>
+        <div class="account_message">
+            <p>Already a member? <a href="#">Sign up</a></p>
         </div>
     </div>
     
